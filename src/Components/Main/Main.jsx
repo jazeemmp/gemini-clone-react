@@ -20,6 +20,7 @@ const Main = () => {
   const typeText = (text) => {
     let index = 0;
     const speed = 10;
+    setResult('')
     const type = () => {
       if (index < text.length) {
         setResult((prev) => prev + text[index]);
