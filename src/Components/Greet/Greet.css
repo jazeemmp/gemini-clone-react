@@ -1,0 +1,46 @@
+.greet-container .greet {
+  margin: 50px 20px;
+  font-size: 56px;
+  color: #c4c5c7;
+  font-weight: 500;
+}
+.greet-container .greet span {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.greet-container .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.greet-container .card {
+  border-radius: 10px;
+  height: 200px;
+  padding: 20px;
+  background-color: #f0f4f9;
+  position: relative;
+  cursor: pointer;
+}
+.greet-container .card i {
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
+.greet-container .card p {
+  color: #585858;
+  font-style: 15px;
+}
+.greet-container .card:hover {
+  background-color: #dfe4ea;
+}
+@media only screen and (max-width: 600px) {
+    .greet-container .cards{
+      display: none;
+    }
+}
